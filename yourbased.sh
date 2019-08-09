@@ -4,7 +4,6 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get update && apt-get install -y tzdata
 gem install bundler -v 2.0.1
 # before_install
-rvm use @global
 gem update --system
 gem uninstall bundler -x
 gem install --force bundler -v 1.17.3
