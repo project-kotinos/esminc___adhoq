@@ -11,6 +11,8 @@ tar -xvf $PWD/travis_phantomjs/phantomjs-2.1.1-linux-x86_64.tar.bz2 -C $PWD/trav
 PATH=$PWD/travis_phantomjs/phantomjs-2.1.1-linux-x86_64/bin:$PATH
 phantomjs --version
 
+
+export RAILS_ENV=test
 # before_install
 gem update --system
 gem install --force bundler -v 1.17.3
