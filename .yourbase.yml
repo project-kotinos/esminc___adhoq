@@ -15,32 +15,12 @@ build_targets:
   environment:
   - BUNDLE_GEMFILE=gemfiles/Gemfile-rails-5.2.x
   name: 2.6.3_Gemfile-rails-5.2.x
-- commands:
-  - chmod +x yourbased.sh
-  - sh ./yourbased.sh
-  container:
-    image: yourbase/yb_ubuntu:16.04
-  environment:
-  - BUNDLE_GEMFILE=gemfiles/Gemfile-rails-6.0.x
-  name: 2.6.3_Gemfile-rails-6.0.x
-- commands:
-  - chmod +x yourbased.sh
-  - sh ./yourbased.sh
-  container:
-    image: yourbase/yb_ubuntu:16.04
-  environment:
-  - BUNDLE_GEMFILE=gemfiles/Gemfile-rails-edge
-  name: 2.6.3_Gemfile-rails-edge
 ci:
   builds:
   - build_target: 2.6.3_Gemfile-rails-5.1.x
     name: 2.6.3_Gemfile-rails-5.1.x
   - build_target: 2.6.3_Gemfile-rails-5.2.x
     name: 2.6.3_Gemfile-rails-5.2.x
-  - build_target: 2.6.3_Gemfile-rails-6.0.x
-    name: 2.6.3_Gemfile-rails-6.0.x
-  - build_target: 2.6.3_Gemfile-rails-edge
-    name: 2.6.3_Gemfile-rails-edge
 dependencies:
   build:
   - ruby:2.6.3
