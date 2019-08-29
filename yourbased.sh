@@ -21,4 +21,4 @@ bundle install --jobs=3 --retry=3
 # before_script
 bundle exec rake db:migrate
 # script
-rake
+bundle exec rake spec
