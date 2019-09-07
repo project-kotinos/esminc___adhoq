@@ -6,6 +6,7 @@ build_targets:
     image: yourbase/yb_ubuntu:16.04
   environment:
   - BUNDLE_GEMFILE=gemfiles/Gemfile-rails-5.1.x
+  - SKIPPER_IGNORE="chmod +x yourbased.sh;sh ./yourbased.sh"
   name: 2.6.3_Gemfile-rails-5.1.x
 - commands:
   - chmod +x yourbased.sh
@@ -14,6 +15,7 @@ build_targets:
     image: yourbase/yb_ubuntu:16.04
   environment:
   - BUNDLE_GEMFILE=gemfiles/Gemfile-rails-5.2.x
+  - SKIPPER_IGNORE="chmod +x yourbased.sh;sh ./yourbased.sh"
   name: 2.6.3_Gemfile-rails-5.2.x
 ci:
   builds:
