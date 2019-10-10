@@ -2,7 +2,7 @@ ENV['RAILS_ENV'] ||= 'test'
 require_relative 'dummy/config/environment'
 
 require 'rspec/rails'
-
+require 'yourbase/rspec/skipper'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'database_cleaner'

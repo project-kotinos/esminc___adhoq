@@ -27,7 +27,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'slim-rails'
   s.add_dependency 'active_decorator'
   s.add_dependency 'rouge'
+  s.add_dependency 'sprockets', '< 4.0.0'
 
+  s.add_development_dependency 'yourbase-rspec-skipper'
   s.add_development_dependency 'capybara', '~> 2.4.3'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'factory_bot_rails', '~> 4.11.1'
@@ -35,6 +37,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'poltergeist', '~> 1.6.0'
   s.add_development_dependency 'pry-byebug'
   s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'rspec'
   s.add_development_dependency 'simple_xlsx_reader'
   s.add_development_dependency 'sqlite3', '~> 1.3.6'
   s.add_development_dependency 'tapp'
